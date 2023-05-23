@@ -3,7 +3,12 @@ import { Pressable } from "react-native";
 import { ImageBackground } from "react-native";
 import { View, StyleSheet, ScrollView, SafeAreaView } from "react-native";
 
-const Untitled5 = () => {
+const Untitled5 = ({
+  route
+}) => {
+  const {
+    splash
+  } = route.params || {};
   const navigation = useNavigation();
   return <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={{
@@ -21,7 +26,8 @@ const Untitled5 = () => {
 
 const styles = StyleSheet.create({
   safeArea: {
-    height: '100%'
+    height: '100%',
+    backgroundColor: "#000000"
   },
   fgltWWHF: {
     height: 562,
