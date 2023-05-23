@@ -13,7 +13,9 @@ const Untitled5 = () => {
       flex: 1
     }}><Pressable onPress={() => {
         navigation.navigate("signup");
-      }}><View style={styles.fgltWWHF}><ImageBackground style={styles.BtyfZrla} source={require("./project_20230522_1008408-01.png")} resizeMode="cover"></ImageBackground></View></Pressable></ScrollView>
+      }}><View style={styles.fgltWWHF}><Pressable onPress={() => {
+            navigation.navigate("signup");
+          }}><ImageBackground style={styles.BtyfZrla} source={require("./project_20230522_1008408-01.png")} resizeMode="cover"></ImageBackground></Pressable></View></Pressable></ScrollView>
     </SafeAreaView>;
 };
 
@@ -30,7 +32,10 @@ const styles = StyleSheet.create({
   },
   BtyfZrla: {
     width: 340,
-    height: 345
+    height: 345,
+    flexDirection: "row",
+    flex: 1,
+    flexWrap: "wrap"
   }
 });
 export default Untitled5;
